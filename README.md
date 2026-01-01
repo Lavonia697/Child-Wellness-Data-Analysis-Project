@@ -7,23 +7,50 @@
 **Contact:**
 lavoniamandi@icloud.com | 🔗 https://www.linkedin.com/in/lavonia-munedzimwe-a89221294/
 
-A data-driven exploration of student health checkups, attendance, and wellbeing indicators to identify patterns that can guide child development programs and wellness support in schools.
+This project analyzes child wellbeing, attendance patterns, and health checkup trends using Excel-based data cleaning, transformation, pivot analysis, and visualization. The goal is to uncover insights that can support decision-making in child wellness programs.
 
+---
 
-# Project Overview
+## Project Overview
 This project analyzes child health and wellbeing data across multiple countries to uncover relationships between attendance, health checkup completion, and wellbeing scores. The goal is to assist NGOs and community programs in designing initiatives that improve school engagement and student wellbeing.
 
+---
 
-# Dataset Structure
+## Project Objectives
+- Understand key factors related to child wellbeing.
+- Analyze attendance patterns and how they relate to wellbeing.
+- Explore age-based health engagement through checkup-up frequently.
+- Communicate findings using dashboards, pivot charts and reports.
+
+  ---
+
+## Dataset Structure
 | Dataset           | Description                                                       |
 | ----------------- | ----------------------------------------------------------------- |
 | **Raw Data**      | Original CSV/Excel file with child information                    |
 | **Cleaned Data**  | Standardized columns, removed duplicates/inconsistencies          |
 | **Modified Data** | Added categories: Age Groups, Attendance Category, Checkup Status |
 | **Analysis File** | Pivot tables, dashboard, trend visuals, insights                  |
+---
+
+## Data Processing Workflow
+**1. Raw Data** - imported from Excel
+
+**2. Cleaning**
+- Removed duplicates
+- Standardized capitalization and formatting
+- Handled missing values (median for wellbeing)
+- Date formatting standardized (Internation format: YYYY-MM-DD)
+  
+**3. Feature Engineering (Modified Data)**
+  - `Age_Group` column created (5-10, 11-15, 16-18)
+  - `Attendance_Category` (Low <70%, Medium 70-89%, High ≥90%)
+  - `Checkup_Status` (Checkup Completed / Not Completed)
+ 
+    ---
 
 
-# Repository Structure
+## Repository Structure
 data/                - Raw, cleaned, and modified datasets
 
 analysis/            - Excel workbook with pivots, charts & dashboard
@@ -32,29 +59,79 @@ outputs/visuals/     - Final graphs exported as PNG
 
 README.md            - Project summary & insights
 
-# Insights
+---
+
+## Insights
 + Children with higher attendance often show slightly higher wellbeing, suggesting school engagement supports mental and social wellness.
 + 55% have not completed a recent health checkup, highlighting a potential gap in preventive care access.
 + Wellbeing varies across countries, indicating environmental and support differences.
 + Age and gender groups shows similar wellbeing distribution, minor variations but no strong bias.
 + Health checkups are linked to slightly improved wellbeing, reinforcing value of regular monitoring.
 
-  # Recommendations
-   1 Promote routine shcool health checkups to increase early support.
-  
-  2 Run attendance support programs to help students with low presence.
-  
-  3 Introduce wellbeing workshops/counselling in schools.
-  
-  4 Track children long term to monitor progress.
+  ---
+
+## Summary of Findings
++ Good attendance strongly aligns with better wellbeing.
++ Younger children engage more frequently in medical checkups.
++ Gender does not significantly impact wellbeing.
++ Regional variation suggests resource/access awareness differences.
  
-  # Tools Used
-  + Microsoft Excel - Cleaning, Analysis & Dashboard
-  + Pivot Tables & Charts - Visualization
-  + GitHub - Project deployment
+    ---
+
+## Recommendations
+ 1. **Increase health outreach programs for older children**
+  
+2. **Introduce attendance wellbeing monitoring for early intervention**
+  
+3. **Support community health access in low-compliance regions**
+  
+4. **Develop wellness workshops to improve mental health awareness**
+ 
+5. **Partnerships with schools for regular checkup drives**
+ 
+  ---
+
+ ## How to navigate this repository
+
+1. View `Data/` to track raw - cleaned - modified datasets
+2. Open `Visulazation/` to see all insights and charts
+3. Read the final report and visual presentation inside `Report/`
+4. Use the PowerPoint for presentations/interviews
+5. Modify or reuse datasets for further exploration
+
+---
+
+## Data Dictionary
+| Column              | Description                 | Type        | Example    |
+| ------------------- | --------------------------- | ----------- | ---------- |
+| Child_ID            | Unique identifier           | Integer     | 145        |
+| Age                 | Age of child                | Integer     | 12         |
+| Gender              | Male/Female                 | Categorical | Female     |
+| Country             | Country of residence        | String      | Kenya      |
+| Attendance_Rate     | School attendance %         | Numeric (%) | 87%        |
+| Wellbeing_Score     | Self-reported score 1-10    | Numeric     | 7          |
+| Last_Checkup_Date   | Most recent medical checkup | Date        | 12/05/2024 |
+| Checkup_Status      | Derived field               | Categorical | Completed |
+| Age_Group           | Derived age buckets         | Categorical | 11-15      |
+| Attendance_Category | Derived attendance grouping | Categorical | Medium     |
+
+---
+ 
+## Tools Used
+
+1. **Microsoft Excel**
+-Cleaning, Analysis ,Pivot Tables & Charts, & Dashboard
+2. **PDF**
+-Reporting
+3. **PowerPoint**
+-Visual presentation
+4. **GitHub** 
+-Project deployment
+
+---
     
-   ### Author
-  Lavonia Munedzimwe - Data Entry Specialist | Junior Data Analyst
-  *Focused on education, wellbeing & impact-driven analytics.*
+## Author
+Lavonia Munedzimwe - Data Entry Specialist | Junior Data Analyst
+lavoniamandi@icloud.com | 🔗 https://www.linkedin.com/in/lavonia-munedzimwe-a89221294/
 
 
