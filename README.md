@@ -11,6 +11,24 @@ This project analyzes child wellbeing, attendance patterns, and health checkup t
 
 ---
 
+## Motivation
+This project was motivated by the need for accessible data insights in child health and school wellbeing programs - especially in resource limited environments.
+
+---
+
+## Table of Contents
+- Project Overview
+- Dataset Structure
+- Data Processing Workflow
+- Repository Structure
+- Insights
+- Summary of Findings
+- Recommendations
+- How to Nagivate This Repository
+- Data Dictionary
+- Tools Used
+- Author
+
 ## Project Overview
 This project analyzes child health and wellbeing data across multiple countries to uncover relationships between attendance, health checkup completion, and wellbeing scores. The goal is to assist NGOs and community programs in designing initiatives that improve school engagement and student wellbeing.
 
@@ -24,13 +42,13 @@ This project analyzes child health and wellbeing data across multiple countries 
 
   ---
 
-## Dataset Structure
-| Dataset           | Description                                                       |
-| ----------------- | ----------------------------------------------------------------- |
-| **Raw Data**      | Original CSV/Excel file with child information                    |
-| **Cleaned Data**  | Standardized columns, removed duplicates/inconsistencies          |
-| **Modified Data** | Added categories: Age Groups, Attendance Category, Checkup Status |
-| **Analysis File** | Pivot tables, dashboard, trend visuals, insights                  |
+## Dataset Description
+
+- **Raw Data** – initial unmodified dataset  
+- **Cleaned Data** – standardized formatting & missing values reviewed  
+- **Modified Data** – new fields created (age groups, attendance category, checkup status)  
+- **Analysis File** – pivot tables & dashboards supporting insights
+
 ---
 
 ## Data Processing Workflow
@@ -40,7 +58,7 @@ This project analyzes child health and wellbeing data across multiple countries 
 - Removed duplicates
 - Standardized capitalization and formatting
 - Handled missing values (median for wellbeing)
-- Date formatting standardized (Internation format: YYYY-MM-DD)
+- Date formatting standardized (International format: YYYY-MM-DD)
   
 **3. Feature Engineering (Modified Data)**
   - `Age_Group` column created (5-10, 11-15, 16-18)
@@ -66,7 +84,7 @@ README.md            - Project summary & insights
 + 55% have not completed a recent health checkup, highlighting a potential gap in preventive care access.
 + Wellbeing varies across countries, indicating environmental and support differences.
 + Age and gender groups shows similar wellbeing distribution, minor variations but no strong bias.
-+ Health checkups are linked to slightly improved wellbeing, reinforcing value of regular monitoring.
++ Health checkups show mild association with wellbeing, suggesting further investigation is valuable.
 
   ---
 
@@ -91,13 +109,20 @@ README.md            - Project summary & insights
  
   ---
 
- ## How to navigate this repository
+## Next Steps
+- Explore machine-readable data formats to automate updates
+- Intergrate additional demographic variables
+- Build interactive dashboards using Power BI or Tableau
 
-1. View `Data/` to track raw - cleaned - modified datasets
-2. Open `Visulazation/` to see all insights and charts
-3. Read the final report and visual presentation inside `Report/`
-4. Use the PowerPoint for presentations/interviews
-5. Modify or reuse datasets for further exploration
+  ---
+
+## How to Navigate This Repository
+
+1. Open the `Data/` folder to review raw, cleaned and modified datasets.
+2. Review the Excel workbook in `Analysis-Ready/` to see pivot tables and dashboards.
+3. Open the `Visualizations/` folder for exported charts.
+4. Read the final report and presentation in `Report/`.
+5. Use the PDF or PPTX for presenting or reviewing insights offline.
 
 ---
 
@@ -120,13 +145,13 @@ README.md            - Project summary & insights
 ## Tools Used
 
 1. **Microsoft Excel**
--Cleaning, Analysis ,Pivot Tables & Charts, & Dashboard
-2. **PDF**
--Reporting
-3. **PowerPoint**
--Visual presentation
-4. **GitHub** 
--Project deployment
+    - Data cleaning and transformation
+   -  Pivot tables and charts
+     - Dashboard creation
+2. **PDF & PowerPoint**
+   - Reporting and presentation
+3. **GitHub** 
+      - Deployment and documentation
 
 ---
     
